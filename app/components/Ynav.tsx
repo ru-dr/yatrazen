@@ -41,7 +41,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/sos" ? (
-                  <span className="text-[#7bf1a8] text-2xl font-space fixed -left-6">
+                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -55,10 +55,10 @@ export default function Ynav() {
             <Link href="/explore">
               <div
                 style={currentRoute === "/explore" ? activeLinkStyle : {}}
-                className="flex items-center"
+                className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/explore" ? (
-                  <span className="text-[#7bf1a8] text-2xl font-space">
+                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -72,10 +72,10 @@ export default function Ynav() {
             <Link href="/weather">
               <div
                 style={currentRoute === "/weather" ? activeLinkStyle : {}}
-                className="flex items-center"
+                className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/weather" ? (
-                  <span className="text-[#7bf1a8] text-2xl font-space">
+                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -89,10 +89,10 @@ export default function Ynav() {
             <Link href="/news">
               <div
                 style={currentRoute === "/news" ? activeLinkStyle : {}}
-                className="flex items-center"
+                className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/news" ? (
-                  <span className="text-[#7bf1a8] text-2xl font-space">
+                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -106,10 +106,10 @@ export default function Ynav() {
             <Link href="/booking">
               <div
                 style={currentRoute === "/booking" ? activeLinkStyle : {}}
-                className="flex items-center"
+                className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/booking" ? (
-                  <span className="text-[#7bf1a8] text-2xl font-space">
+                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (

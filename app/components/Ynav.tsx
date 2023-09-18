@@ -15,7 +15,7 @@ export default function Ynav() {
   return (
     <main className="w-screen">
       <nav className="flex flex-row justify-between items-center px-6 py-4">
-        <p className="text-3xl font-bold">YatraZen.</p>
+        <Link href={"/"} className="text-3xl font-bold">YatraZen.</Link>
         <ul className="flex flex-row w-2/5 justify-between items-center text-lg">
           <li>
             <Link href="/translate">

@@ -1,6 +1,6 @@
 import Ynav from "../components/Ynav";
 
-export default function Sos() {
+export default function Explore() {
   return (
     <main className="">
       <Ynav />

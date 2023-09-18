@@ -13,7 +13,6 @@ export default function Ynav() {
   };
 
   return (
-    <main className="w-screen">
       <nav className="flex flex-row justify-between items-center px-6 py-4">
         <Link href={"/"} className="text-3xl font-bold">YatraZen.</Link>
         <ul className="flex flex-row w-2/5 justify-between items-center text-lg">
@@ -24,7 +23,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/translate" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -41,7 +40,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/sos" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -58,7 +57,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/explore" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -75,7 +74,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/weather" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -92,7 +91,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/news" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -109,7 +108,7 @@ export default function Ynav() {
                 className="flex items-center relative ease-linear transform"
               >
                 {showAsterisk && currentRoute === "/booking" ? (
-                  <span className="text-[#b0f2b4] text-2xl font-space fixed -left-6 bottom-0 animate-bounce">
+                  <span className="text-[#aaf683] text-3xl font-space fixed -left-4 -bottom-3 animate-bounce">
                     *&nbsp;
                   </span>
                 ) : (
@@ -131,6 +130,5 @@ export default function Ynav() {
           </li>
         </ul>
       </nav>
-    </main>
   );
 }

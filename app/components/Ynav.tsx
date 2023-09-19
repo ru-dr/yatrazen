@@ -178,7 +178,7 @@ export default function Ynav() {
       <div
         className={`nav-menu h-screen overflow-hidden flex justify-center items-center ${
           showMobileMenu ? "w-screen" : "w-0"
-        } bg- absolute top-0 right-0 z-10 bg-red-200 backdrop-blur-2xl transition-all duration-500 ease-in-out`}
+        } bg- absolute top-0 right-0 z-10 bg-red-200 transition-all duration-500 ease-in-out`}
       >
         <div className="flex flex-col justify-center items-center text-2xl gap-y-10">
           <Link href="/translate">

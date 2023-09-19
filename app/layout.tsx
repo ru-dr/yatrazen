@@ -25,7 +25,7 @@ type CustomMetadata = {
 
 export const metadata: CustomMetadata = {
   title: "YatraZen",
-  description: "Your Complete Travel Companion",
+  description: "YaatraZen is your complete travel companion, that allows you to translate local languages, find nearby hospitals, see the latest weather, find all travel news , explore new places according to you and much more.",
   openGraph: {
     title: "YatraZen",
     description: "YatraZen is your complete travel companion, that allows you to translate local languages, find nearby hospitals, see the latest weather, find all travel news , explore new places according to you and much more.",

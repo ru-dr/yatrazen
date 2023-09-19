@@ -187,7 +187,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/translate" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-ping">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
                   *
                 </span>
               ) : (

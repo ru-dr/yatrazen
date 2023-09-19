@@ -30,7 +30,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/translate" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *
                 </span>
               ) : (
@@ -47,7 +47,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/sos" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -64,7 +64,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/explore" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -81,7 +81,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/weather" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -98,7 +98,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/news" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -115,7 +115,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/booking" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -187,7 +187,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/translate" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-ping">
                   *
                 </span>
               ) : (
@@ -202,7 +202,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/sos" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -217,7 +217,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/explore" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -232,7 +232,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/weather" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -247,7 +247,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/news" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (
@@ -262,7 +262,7 @@ export default function Ynav() {
               className="flex items-center relative ease-linear transform"
             >
               {showAsterisk && currentRoute === "/booking" ? (
-                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 animate-bounce">
+                <span className="text-[#aaf683] text-3xl font-space fixed -left-6 -bottom-1 animate-bounce">
                   *&nbsp;
                 </span>
               ) : (

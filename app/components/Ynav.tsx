@@ -18,8 +18,12 @@ export default function Ynav() {
   };
 
   return (
-    <nav className="flex flex-row justify-between items-center px-6 py-4">
-      <Link href={"/"} className="inline-block z-50 text-3xl font-bold">
+    <nav className="flex flex-row justify-between items-center py-4">
+      <Link
+        href={"/"}
+        className="inline-block z-50 text-3xl font-bold xxs:text-base xs:text-md sm:text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl
+      "
+      >
         YatraZen.
       </Link>
       <ul className="hidden xl:flex flex-row w-2/5 justify-between items-center text-lg">
@@ -130,7 +134,7 @@ export default function Ynav() {
         <li>
           <Link
             href="/signin"
-            className="px-6 py-2 bg-[#beffc5] rounded-full hover:bg-[#acff82] duration-500 transition-colors relative z-50"
+            className="px-6 py-2 bg-[#beffc5] rounded-full hover:bg-[#acff82] duration-500 transition-colors relative z-50 xxs:text-base xxs:px-4 xxs:py-1 xl:px-6 xl:py-2 xl:text-lg lg:px-6 lg:py-2 lg:text-lg md:px-6 md:py-2 md:text-lg sm:px-6 sm:py-2 sm:text-lg"
           >
             Sign in
           </Link>
@@ -178,7 +182,7 @@ export default function Ynav() {
       <div
         className={`nav-menu h-screen overflow-hidden flex justify-center items-center ${
           showMobileMenu ? "w-screen" : "w-0"
-        } bg- absolute top-0 right-0 z-10 bg-red-200 transition-all duration-500 ease-in-out`}
+        } bg- absolute top-0 right-0 z-10 backdrop-blur-xl transition-all duration-500 ease-in-out`}
       >
         <div className="flex flex-col justify-center items-center text-2xl gap-y-10">
           <Link href="/translate">

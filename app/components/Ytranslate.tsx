@@ -10,6 +10,10 @@ export default function Ytranslate() {
     [selectedKeys]
   );
 
+  interface setSelectedKeys {
+    
+  }
+
   return (
     <Dropdown>
       <DropdownTrigger>
@@ -25,7 +29,7 @@ export default function Ytranslate() {
         disallowEmptySelection
         selectionMode="single"
         selectedKeys={selectedKeys}
-        onSelectionChange={(newSelectedKeys) => setSelectedKeys(Array.from(newSelectedKeys))}
+        onSelectionChange={(newSelectedKeys) => setSelectedKeys(Array.from(newSelectedKeys).map((key) => String(key)))}
       >
         <DropdownItem key="text">Text</DropdownItem>
         <DropdownItem key="number">Number</DropdownItem>

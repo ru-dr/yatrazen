@@ -1,42 +1,85 @@
-'use client'
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
+"use client";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
 import { useState, useMemo } from "react";
 
 export default function Ytranslate() {
-  const [selectedKeys, setSelectedKeys] = useState(["text"]); // Initialize with an array
+  const [sourceLang, setSourceLang] = useState("en");
+  const [destLang, setDestLang] = useState("es");
+  const [inputText, setInputText] = useState("");
+  const [outputText, setOutputText] = useState("");
 
-  const selectedValue = useMemo(
-    () => Array.from(selectedKeys).join(", ").replaceAll("_", " "),
-    [selectedKeys]
-  );
+  const languageInputOptions = [
+    { key: "en", label: "English" },
+    { key: "es", label: "Spanish" },
+    { key: "fr", label: "French" },
+    { key: "gu", label: "Gujarati" },
+    { key: "hi", label: "Hindi" },
+  ];
 
-  interface setSelectedKeys {
-    
-  }
+  const languageOutputOptions = [
+    { key: "en", label: "English" },
+    { key: "es", label: "Spanish" },
+    { key: "fr", label: "French" },
+    { key: "gu", label: "Gujarati" },
+    { key: "hi", label: "Hindi" },
+  ];
 
   return (
-    <Dropdown>
-      <DropdownTrigger>
-        <Button color="primary"
-          variant="bordered"
-          className="capitalize bg-gray-700 px-6 py-2 rounded-2xl">
-          {selectedValue}
-        </Button>
-      </DropdownTrigger>
-      <DropdownMenu
-        aria-label="Single selection example"
-        variant="flat"
-        disallowEmptySelection
-        selectionMode="single"
-        selectedKeys={selectedKeys}
-        onSelectionChange={(newSelectedKeys) => setSelectedKeys(Array.from(newSelectedKeys).map((key) => String(key)))}
-      >
-        <DropdownItem key="text">Text</DropdownItem>
-        <DropdownItem key="number">Number</DropdownItem>
-        <DropdownItem key="date">Date</DropdownItem>
-        <DropdownItem key="single_date">Single Date</DropdownItem>
-        <DropdownItem key="iteration">Iteration</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
+    <div className="flex justify-center items-center my-10 gap-x-10">
+      <Dropdown className="">
+        <DropdownTrigger className="">
+          <Button
+            color="primary"
+            variant="bordered"
+            className="capitalize bg-[#beffc5] btn-trans px-10 py-2 rounded-2xl"
+          >
+            {languageInputOptions.find((option) => option.key === sourceLang)?.label || "Select Language"}
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu
+          className="cursor-pointer d"
+          aria-label="Source Language selection"
+          variant="flat"
+          disallowEmptySelection
+          selectionMode="single"
+          selectedKeys={[sourceLang]}
+          onSelectionChange={(newSelectedKeys) => setSourceLang(Array.from(newSelectedKeys).map((key) => String(key))[0])}
+        >
+          {languageInputOptions.map((option) => (
+            <DropdownItem key={option.key} className="">{option.label}</DropdownItem>
+          ))}
+        </DropdownMenu>
+      </Dropdown>
+      <Dropdown className="">
+        <DropdownTrigger className="">
+          <Button
+            color="primary"
+            variant="bordered"
+            className="capitalize bg-[#beffc5] btn-trans px-10 py-2 rounded-2xl"
+          >
+            {languageOutputOptions.find((option) => option.key === destLang)?.label || "Select Language"}
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu
+          className="cursor-pointer"
+          aria-label="Target Language selection"
+          variant="flat"
+          disallowEmptySelection
+          selectionMode="single"
+          selectedKeys={[destLang]}
+          onSelectionChange={(newSelectedKeys) => setDestLang(Array.from(newSelectedKeys).map((key) => String(key))[0])}
+        >
+          {languageOutputOptions.map((option) => (
+            <DropdownItem key={option.key} className="">{option.label}</DropdownItem>
+          ))}
+        </DropdownMenu>
+      </Dropdown>
+    </div>
   );
 }

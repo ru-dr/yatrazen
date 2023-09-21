@@ -8,7 +8,7 @@ import {
   Button,
   Input,
 } from "@nextui-org/react";
-import useTranslate from "../../api/route";
+import useTranslate from "../../hooks/useTranslate";
 
 interface TranslateData {
   text: string;

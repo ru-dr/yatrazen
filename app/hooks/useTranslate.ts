@@ -4,7 +4,7 @@ const useTranslate = () => {
   const translate = async (to: string, from: string, text: string) => {
     try {
       const res = await axios.get(
-        `https://api.pawan.krd/gtranslate?from=${from}&to=${to}&text=${text}`,
+        `https://langapi.vercel.app/home?from=${from}&to=${to}&text=${text}`,
 
       );
       return res.data;

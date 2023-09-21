@@ -375,7 +375,7 @@ export default function Ytranslate() {
         </DropdownMenu>
       </Dropdown>
       <Textarea
-        className="py-2 justify-center items-center px-2 rounded-2xl border-4 border-gray-300"
+        className="py-2 justify-center items-center px-4 rounded-2xl border-4 border-gray-300"
         type="text"
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}

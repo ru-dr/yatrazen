@@ -6,7 +6,6 @@ import {
   DropdownMenu,
   DropdownItem,
   Button,
-  Input,
   Textarea,
 } from "@nextui-org/react";
 import useTranslate from "../../hooks/useTranslate";

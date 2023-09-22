@@ -26,7 +26,7 @@ function getCurrentDate() {
 const Yweather: React.FC = () => {
   const date = getCurrentDate();
   const [weatherData, setWeatherData] = useState<null | WeatherData>(null);
-  const [city, setCity] = useState<string>("visnagar");
+  const [city, setCity] = useState<string>("");
 
   async function fetchData(cityName: string) {
     try {

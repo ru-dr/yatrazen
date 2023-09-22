@@ -20,8 +20,7 @@ import {
 } from "react-icons/bs";
 import { TbTemperatureCelsius } from "react-icons/tb";
 
-// b2319354382f61fb8056a07f2d6cb2bc
-const APIkey = "b2319354382f61fb8056a07f2d6cb2bc";
+const APIkey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
 
 interface WeatherData {
   name: string;

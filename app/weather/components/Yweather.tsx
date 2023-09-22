@@ -96,9 +96,9 @@ export default function Home() {
   // if data is false show loading
   if (!data) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div>
-          
+      <div className="flex items-center justify-center h-full">
+        <div className="h-[80vh] justify-around flex items-center">
+          <Spinner size="md" />
         </div>
       </div>
     );
@@ -134,7 +134,7 @@ export default function Home() {
   const date = new Date(data.dt * 1000);
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-full pt-10">
       <form
         onSubmit={(e) => handleSubmit(e)}
         className={`${
@@ -157,7 +157,7 @@ export default function Home() {
         </div>
       </form>
       {/* card */}
-      <div className="w-full max-w-[450px] bg-black/60 min-h-[584px] text-white backdrop-blur-[32px] rounded-[16px] py-8 px-6">
+      <div className="w-full max-w-[450px] bg-black/60 min-h-fit text-white backdrop-blur-[32px] rounded-[16px] py-8 px-6">
         <div>
           {/* card top */}
           <div className="flex items-center gap-x-5 rounded-lg">
@@ -172,7 +172,7 @@ export default function Home() {
           {/* card body */}
           <div className="my-20">
             <div className="flex justify-center items-center">
-              <div className="text-[144px] leading-none font-light">
+              <div className="text-[144px] max-sm:text-[80px] leading-none font-light">
                 {parseInt(data.main.temp)}
               </div>
               {/* celcius icon */}
@@ -187,52 +187,58 @@ export default function Home() {
           </div>
           {/* card bottom */}
           <div className="max-w-[378px] mx-auto flex flex-col gap-y-6">
-            <div className="flex justify-between">
-              <div className="flex items-center gap-x-2">
-                {/* icon */}
-                <div className="text-[20px]">
-                  <BsEye />
-                </div>
-                <div>
-                  Visibility{" "}
-                  <span className="ml-2">{data.visibility / 1000} Km</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-x-2">
-                {/* icon */}
-                <div className="text-[20px]">
-                  <BsThermometer />
-                </div>
-                <div className="flex">
-                  Feels Like{" "}
-                  <div className="flex ml-2">
-                    {parseInt(data.main.feels_like)}
-                    <TbTemperatureCelsius />
+            <div className="flex gap-x-6 flex-col items-center gap-y-2">
+              <div className="flex justify-between">
+                <div className="flex gap-y-1 max-sm:flex-col max-sm:items-center w-96 justify-between">
+                  <div className="flex items-center gap-x-2">
+                    {/* icon */}
+                    <div className="text-[20px]">
+                      <BsEye />
+                    </div>
+                    <div>
+                      Visibility{" "}
+                      <span className="ml-2">{data.visibility / 1000} Km</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-x-2">
+                    {/* icon */}
+                    <div className="text-[20px]">
+                      <BsThermometer />
+                    </div>
+                    <div className="flex">
+                      Feels Like{" "}
+                      <div className="flex ml-2">
+                        {parseInt(data.main.feels_like)}
+                        <TbTemperatureCelsius />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-between">
-              <div className="flex items-center gap-x-2">
-                {/* icon */}
-                <div className="text-[20px]">
-                  <BsWater />
-                </div>
-                <div>
-                  Humidity
-                  <span className="ml-2">{data.main.humidity} %</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-x-2">
-                {/* icon */}
-                <div className="text-[20px]">
-                  <BsWind />
-                </div>
-                <div>
-                  Wind
-                  <span className="ml-2">
-                    {`${(data.wind.speed * 3.6).toString()} Km/H`}
-                  </span>
+              <div className="flex justify-between">
+                <div className="flex gap-y-2 max-sm:flex-col max-sm:items-center w-96 justify-between">
+                  <div className="flex items-center gap-x-2">
+                    {/* icon */}
+                    <div className="text-[20px]">
+                      <BsWater />
+                    </div>
+                    <div>
+                      Humidity
+                      <span className="ml-2">{data.main.humidity} %</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-x-2">
+                    {/* icon */}
+                    <div className="text-[20px]">
+                      <BsWind />
+                    </div>
+                    <div>
+                      Wind
+                      <span className="ml-2">
+                        {`${Math.floor(data.wind.speed * 3.6)} Km/H`}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

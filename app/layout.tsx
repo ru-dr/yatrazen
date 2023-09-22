@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import { Providers } from "./providers";
 import { NextUIProvider } from "@nextui-org/react";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,10 +74,11 @@ export default function RootLayout({
         ))}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <body className={inter.className}>
-        <Providers>{children}</Providers>
-      </body>
+      <ClerkProvider>
+        <body className={inter.className}>
+          <Providers>{children}</Providers>
+        </body>
+      </ClerkProvider>
     </html>
   );
 }

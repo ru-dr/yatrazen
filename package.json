@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.24.1",
     "@nextui-org/react": "^2.1.13",
+    "@phosphor-icons/react": "github:phosphor-icons/react",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -21,6 +23,7 @@
     "middleware": "^1.0.0",
     "next": "13.4.19",
     "nextjs-cors": "^2.1.2",
+    "phosphor-icons": "^1.4.2",
     "postcss": "8.4.29",
     "preline": "^1.9.0",
     "react": "18.2.0",

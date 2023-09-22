@@ -4,7 +4,10 @@ export default function Sos() {
   return (
     <main className="mx-6 my-2">
       <Ynav />
-      <div className="machine-wrap body-constrcution">
+      <div>
+        <p className="text-2xl font-bold text-center flex justify-center items-center">Under Construction</p>
+      </div>
+      <div className="machine-wrap body-constrcution mx-6 my-6">
         <div className="machine">
           <div className="machine-roof">
             <div className="machine-silencer">

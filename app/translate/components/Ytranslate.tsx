@@ -319,7 +319,6 @@ export default function Ytranslate() {
       <Dropdown className="focus-visible:none">
         <DropdownTrigger className="">
           <Button
-            color="primary"
             variant="bordered"
             className="capitalize bg-[#beffc5] btn-trans px-10 py-2 rounded-2xl -z-0 focus:border-blue-500 border-2"
           >
@@ -348,7 +347,6 @@ export default function Ytranslate() {
       <Dropdown className="">
         <DropdownTrigger className="">
           <Button
-            color="primary"
             variant="bordered"
             className="capitalize bg-[#beffc5] btn-trans px-10 py-2 rounded-2xl -z-0"
           >
@@ -375,12 +373,13 @@ export default function Ytranslate() {
         </DropdownMenu>
       </Dropdown>
       <Textarea
-        className="py-2 justify-center items-center px-4 rounded-2xl border-4 border-gray-300"
+        className="justify-center items-center rounded-2xl"
         type="text"
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
         placeholder="Enter text to translate"
         aria-multiline="true"
+        variant="bordered"
       />
       <div className="flex justify-center items-center w-full flex-col gap-y-3">
         <button
@@ -391,8 +390,11 @@ export default function Ytranslate() {
         </button>
         <p>Translated Output:</p>
         <Textarea
-          className="p-2 rounded-2xl border-4 border-gray-300 w-full"
+          className="textareaa rounded-2xl"
           value={outputText}
+          variant="bordered"
+          placeholder="Translated text"
+          isReadOnly
         />
       </div>
     </div>

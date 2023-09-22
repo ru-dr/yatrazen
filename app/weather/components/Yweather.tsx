@@ -138,7 +138,7 @@ export default function Home() {
         onSubmit={(e) => handleSubmit(e)}
         className={`${
           animate ? "animate-spin" : "animate-none"
-        } h-16 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mb-8`}
+        } h-16 bg-black/30 w-full max-w-[250px] sm:max-w-[450px] rounded-full backdrop-blur-[32px] mb-8`}
       >
         <div className="h-full relative flex items-center justify-between p-2">
           <input
@@ -149,9 +149,9 @@ export default function Home() {
           />
           <button
             type="submit"
-            className="bg-[#00bfff] w-20 h-12 rounded-full flex items-center justify-center hover:bg-cyan-700"
+            className="bg-[#00bfff] w-20 h-12 rounded-full flex items-center justify-center hover:bg-cyan-700 m-5 px-4"
           >
-            <IoMdSearch className="text-2xl text-white" />
+            <IoMdSearch className="text-2xl text-white " />
           </button>
         </div>
       </form>

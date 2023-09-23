@@ -4,10 +4,16 @@ import Yplaces from "./components/Yplaces";
 
 export default function Home() {
   return (
-    <main className="mx-6 my-2">
-      <Ynav />
-      <Yhero />
-      <Yplaces />
+    <main className="mx-6">
+      <nav className="sticky backdrop-blur-lg top-2">
+        <Ynav />
+      </nav>
+      <div className="my-4">
+        <Yhero />
+      </div>
+      <div>
+        <Yplaces />
+      </div>
     </main>
   );
 }

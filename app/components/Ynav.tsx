@@ -2,6 +2,8 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
+import { UserButton } from "@clerk/nextjs";
+import { UserCircle } from "@phosphor-icons/react";
 
 export default function Ynav() {
   const currentRoute = usePathname();
@@ -133,10 +135,13 @@ export default function Ynav() {
       <ul className="flex text-md items-center">
         <li>
           <Link
-            href="/signin"
-            className="px-6 py-2 bg-[#beffc5] rounded-full hover:bg-[#acff82] duration-500 transition-colors relative z-50 xxs:text-base xxs:px-4 xxs:py-1 xl:px-6 xl:py-2 xl:text-lg lg:px-6 lg:py-2 lg:text-lg md:px-6 md:py-2 md:text-lg sm:px-6 sm:py-2 sm:text-lg"
+            href="/sign-in"
+            className="relative ease-linear transform hover:scale-105"
           >
-            Sign in
+            <div className="relative px-6 py-[15px]">
+              <UserCircle size={32} className="absolute top-0" />
+              <UserButton />
+            </div>
           </Link>
         </li>
         {/* mobile button goes here */}

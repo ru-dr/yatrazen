@@ -140,7 +140,9 @@ export default function Ynav() {
           >
             <div className="relative px-6 py-[15px]">
               <UserCircle size={32} className="absolute top-0" />
-              <UserButton />
+              <div className="absolute top-0">
+                <UserButton />
+              </div>
             </div>
           </Link>
         </li>

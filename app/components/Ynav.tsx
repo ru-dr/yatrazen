@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
-import { UserButton } from "@clerk/nextjs";
 
 export default function Ynav() {
   const currentRoute = usePathname();
@@ -134,28 +133,11 @@ export default function Ynav() {
       <ul className="flex text-md items-center">
         <li>
           <Link
-            href="/sign-in"
-            className=""
+            href="/signin"
+            className="px-6 py-2 bg-[#beffc5] rounded-full hover:bg-[#acff82] duration-500 transition-colors relative z-50 xxs:text-base xxs:px-4 xxs:py-1 xl:px-6 xl:py-2 xl:text-lg lg:px-6 lg:py-2 lg:text-lg md:px-6 md:py-2 md:text-lg sm:px-6 sm:py-2 sm:text-lg"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-user-circle"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-              <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
-            </svg>
+            Sign in
           </Link>
-          <UserButton afterSignOutUrl="/" />
         </li>
         {/* mobile button goes here */}
         <div className="xl:hidden flex items-center px-4 relative">

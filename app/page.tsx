@@ -5,13 +5,11 @@ import Yplaces from "./components/Yplaces";
 export default function Home() {
   return (
     <main className="mx-6">
-      <nav className="sticky backdrop-blur-lg top-2">
         <Ynav />
-      </nav>
-      <div className="my-4">
+      <div className="my-4 -z-0">
         <Yhero />
       </div>
-      <div>
+      <div className="-z-0">
         <Yplaces />
       </div>
     </main>

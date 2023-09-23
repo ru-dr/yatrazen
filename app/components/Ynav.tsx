@@ -147,7 +147,7 @@ export default function Ynav() {
           </Link>
         </li>
         {/* mobile button goes here */}
-        <div className="xl:hidden flex items-center px-4 relative">
+        <div className="xl:hidden flex items-center px-4 relative z-20">
           <button
             onClick={toggleMobileMenu}
             className="absolute z-50 ease-in ani"

@@ -29,7 +29,7 @@ export default function Home() {
       <div className="container mx-auto p-8 md:p-16 flex flex-col md:flex-row items-center justify-between min-h-screen">
         {/* release version message component */}
         {/* Left Section - Project Archived Message */}
-        <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0">
+        <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0 xs:mt-12 sm:mt-10 lg:mt-8">
           <h1 className="text-5xl font-bold mb-4 text-center">
             Project Update: v2 Archived
           </h1>

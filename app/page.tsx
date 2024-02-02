@@ -1,5 +1,5 @@
 import React from "react";
-import Release from "./components/Release";
+import Link from "next/link";
 
 const MobileAppScreenshotURL =
   "https://ucarecdn.com/1c53f2b7-4a42-4e6a-b4c0-ad298bbba937/-/scale_crop/838x1264/-/format/auto/-/quality/best/";
@@ -8,7 +8,23 @@ export default function Home() {
   return (
     <div>
       <div className="z-50 sticky w-full" style={{ position: "fixed" }}>
-        <Release />
+        <div className="flex flex-row w-full h-12 bg-[#c0fd90] text-black justify-center items-center text-base font-light space-x-4">
+          <div>
+            <div className="avail-ping"></div>
+          </div>
+          <p className="release">
+            Newer Version Available
+            <span className="font-bold"> ( v3.0.4a ) </span>{" "}
+            <span>
+              <Link
+                href="https://expo.dev/artifacts/eas/jVyCQZcf2x2xnnSESWiKMf.apk"
+                className="text-blue-500 hover:text-blue-700 font-semibold"
+              >
+                Download
+              </Link>
+            </span>
+          </p>
+        </div>
       </div>
       <div className="container mx-auto p-8 md:p-16 flex flex-col md:flex-row items-center justify-between min-h-screen">
         {/* release version message component */}

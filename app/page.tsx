@@ -44,20 +44,18 @@ export default function Home() {
               href="https://github.com/ru-dr/v3-alpha"
               className="text-blue-500 hover:text-blue-700"
             >
-              v3 Alpha development
+              v3-alpha
             </a>{" "}
-            on GitHub for mobile devices. Also, take a look at the{" "}
+            and{" "}
             <a
-              href="https://github.com/ru-dr/v4"
+              href="https://github.com/ru-dr/v4-beta"
               className="text-blue-500 hover:text-blue-700"
             >
-              v4 Beta development
+              v4-beta
             </a>{" "}
-            for mobile devices.
+            development on GitHub for mobile devices.
           </p>
-
         </section>
-
         {/* Right Section - Mobile App Screenshot */}
         <section className="md:w-1/2 flex items-center justify-center">
           {/* Displaying the mobile app screenshot from the provided URL */}

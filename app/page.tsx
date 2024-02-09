@@ -35,19 +35,27 @@ export default function Home() {
           </h1>
           <p className="text-lg md:text-xl mb-4 text-center">
             The web version (v2) of the project is no longer actively
-            maintained. Development has shifted to the mobile version (v3) for
+            maintained. Development has shifted to the mobile version (v3-Alpha) & (v4)
             iOS and Android devices.
           </p>
           <p className="text-lg md:text-xl mb-8 text-center">
             Check out the{" "}
             <a
-              href="https://github.com/ru-dr/v3"
+              href="https://github.com/ru-dr/v3-alpha"
               className="text-blue-500 hover:text-blue-700"
             >
-              v3 development on GitHub
+              v3 Alpha development
+            </a>{" "}
+            on GitHub for mobile devices. Also, take a look at the{" "}
+            <a
+              href="https://github.com/ru-dr/v4"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              v4 Beta development
             </a>{" "}
             for mobile devices.
           </p>
+
         </section>
 
         {/* Right Section - Mobile App Screenshot */}

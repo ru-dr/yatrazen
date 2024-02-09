@@ -44,14 +44,14 @@ export default function Home() {
               href="https://github.com/ru-dr/v3-alpha"
               className="text-blue-500 hover:text-blue-700"
             >
-              v3-alpha
+              v3 Alpha
             </a>{" "}
             and{" "}
             <a
               href="https://github.com/ru-dr/v4-beta"
               className="text-blue-500 hover:text-blue-700"
             >
-              v4-beta
+              v4 Beta
             </a>{" "}
             development on GitHub for mobile devices.
           </p>

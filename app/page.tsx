@@ -15,10 +15,10 @@ export default function Home() {
           </div>
           <p className="release">
             Newer Version Available
-            <span className="font-bold"> ( v3.0.4a ) </span>{" "}
+            <span className="font-bold"> ( v4.0.0b ) </span>{" "}
             <span>
               <Link
-                href="https://expo.dev/artifacts/eas/jVyCQZcf2x2xnnSESWiKMf.apk"
+                href="https://github.com/ru-dr/v4/releases/download/Alpha%F0%9F%9A%80/app-release.apk"
                 className="text-blue-500 hover:text-blue-700 font-semibold"
               >
                 Download

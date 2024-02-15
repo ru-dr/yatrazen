@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* import general sans if required */
 
+body {
+  font-family: "Inter";
+}
+
 .nav-menu {
   transition: width 0.5s ease;
 }
@@ -317,16 +321,19 @@ textarea {
     transform: scale(0.5);
     opacity: 0.5;
   }
+
   20% {
     transform: scale(1);
     opacity: 1;
     animation-timing-function: ease-out;
   }
+
   80% {
     transform: scale(1.5);
     opacity: 0;
     animation-timing-function: ease-in;
   }
+
   100% {
     transform: scale(2);
     opacity: 0;

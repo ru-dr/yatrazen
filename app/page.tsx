@@ -52,14 +52,14 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-8 text-center">
             Check out the{" "}
             <a
-              href="https://github.com/ru-dr/v3-alpha"
+              href="https://github.com/ru-dr/v3-Alpha"
               className="text-blue-500 hover:text-blue-700"
             >
               v3 Alpha
             </a>{" "}
             and{" "}
             <a
-              href="https://github.com/ru-dr/v4-beta"
+              href="https://github.com/ru-dr/v4"
               className="text-blue-500 hover:text-blue-700"
             >
               v4 Beta

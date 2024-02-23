@@ -13,10 +13,10 @@ const Download = () => {
         </div>
         <p className="release">
           Newer Version Available
-          <span className="font-bold"> ( v4.0.5b ) </span>{" "}
+          <span className="font-bold"> ( v4.0.6b ) </span>{" "}
           <span>
             <Link
-              href="https://github.com/ru-dr/v4/releases/download/Beta%F0%9F%9A%80/app-release.apk"
+              href="https://github.com/ru-dr/v4/releases/download/Pre-Release/app-release.apk"
               className="text-blue-500 hover:text-blue-700 font-semibold px-2"
             >
               Download

@@ -13,28 +13,28 @@ const Info = () => {
       >
         <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0 xs:mt-20 sm:mt-16 lg:mt-8 relative">
           <h1 className="text-5xl font-bold mb-4 text-center">
-            Project Update: v2 Archived
+            Project Update: v1 Live
           </h1>
           <p className="text-lg md:text-xl mb-4 text-center">
-            The web version (v2) of the project is no longer actively
-            maintained. Development has shifted to the mobile version (v3-Alpha)
-            & (v4) iOS and Android devices.
+            The v1 of the project is live! You can now access the project on
+            your mobile device. The project is still in development and new
+            features are being added.
           </p>
           <p className="text-lg md:text-xl mb-8 text-center">
             Check out the{" "}
             <Link
-              href="https://github.com/ru-dr/v3-Alpha"
+              href="https://github.com/NisargPatel14/yatrazen-HIS"
               className="text-blue-500 hover:text-blue-700"
             >
-              v3 Alpha
+              v1 Alpha
             </Link>{" "}
-            and{" "}
+            {/* and{" "}
             <Link
               href="https://github.com/ru-dr/v4"
               className="text-blue-500 hover:text-blue-700"
             >
               v4 Beta
-            </Link>{" "}
+            </Link>{" "} */}
             development on GitHub for mobile devices.
           </p>
         </section>

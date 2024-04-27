@@ -9,7 +9,7 @@ const Feedback = () => {
       </div>
       <p className="release">
         Share your feedback on{" "}
-        <span className="font-bold "> ( v1.0.1a ) </span>{" "}
+        <span className="font-bold "> ( v4.0.6a ) </span>{" "}
         <span>
           <Link
             href="/feedback"

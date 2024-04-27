@@ -4,7 +4,7 @@ import Info from "./components/Info";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen">
       <Download />
       <Info />
     </div>

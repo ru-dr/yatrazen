@@ -9,11 +9,11 @@ const Info = () => {
   return (
     <div>
       <div
-        className="container mx-auto md:p-16 flex flex-col md:flex-row items-center justify-between h-max m-3.5"
+        className="container mx-auto md:p-16 flex flex-col md:flex-row items-center justify-between max-h-screen m-3.5"
       >
         <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0 xs:mt-20 sm:mt-16 lg:mt-8 relative">
           <h1 className="text-5xl font-bold mb-4 text-center">
-            Project Update: v1 Live
+            Project Update: v4 Live
           </h1>
           <p className="text-lg md:text-xl mb-4 text-center">
             The v1 of the project is live! You can now access the project on
@@ -23,18 +23,18 @@ const Info = () => {
           <p className="text-lg md:text-xl mb-8 text-center">
             Check out the{" "}
             <Link
-              href="https://github.com/NisargPatel14/yatrazen-HIS"
+              href="https://github.com/ru-dr/v3-Alpha"
               className="text-blue-500 hover:text-blue-700"
             >
-              v1 Alpha
+              v3 Alpha
             </Link>{" "}
-            {/* and{" "}
+            and{" "}
             <Link
               href="https://github.com/ru-dr/v4"
               className="text-blue-500 hover:text-blue-700"
             >
               v4 Beta
-            </Link>{" "} */}
+            </Link>{" "}
             development on GitHub for mobile devices.
           </p>
         </section>

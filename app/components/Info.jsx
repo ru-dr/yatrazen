@@ -16,7 +16,7 @@ const Info = () => {
             Project Update: v4 Live
           </h1>
           <p className="text-lg md:text-xl mb-4 text-center">
-            The v1 of the project is live! You can now access the project on
+            The v4 of the project is live! You can now access the project on
             your mobile device. The project is still in development and new
             features are being added.
           </p>

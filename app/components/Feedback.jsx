@@ -7,7 +7,7 @@ const Feedback = () => {
       <div>
         <div className="avail-ping"></div>
       </div>
-      <p className="release">
+      {/* <p className="release">
         Share your feedback on{" "}
         <span className="font-bold "> ( v4.0.6a ) </span>{" "}
         <span>
@@ -18,6 +18,13 @@ const Feedback = () => {
             Feedback
           </Link>
         </span>
+      </p> */}
+      <p className="release">
+        Developed by:{" "}
+        <span className="font-bold">
+          <Link href="https://rudr.me/">rudr</Link>
+        </span>{" "}
+        & Team.exe
       </p>
     </div>
   );

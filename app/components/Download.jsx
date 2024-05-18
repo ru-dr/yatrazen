@@ -4,16 +4,15 @@ import Updates from "./Updates";
 
 const Download = () => {
   return (
-    <div
-      className="z-50 sticky w-full"
-    >
+    <div className="z-50 sticky w-full">
       <div className="flex flex-row w-full h-12 bg-[#c0fd90] text-black justify-center items-center text-base font-light space-x-4">
         <div>
           <div className="avail-ping"></div>
         </div>
-        <p className="release">
-          Newer Version Available
-          <span className="font-bold"> ( v4.0.6a ) </span>{" "}
+        <p className="release font-medium">
+          Development halted due to{" "}
+          <span className="font-bold">insufficient</span> funds.
+          {/* <span className="font-bold"> ( v4.0.6a ) </span>{" "}
           <span>
             <Link
               href="https://github.com/NisargPatel14/yatrazen-HIS/releases/download/v1.1/app-release.apk"
@@ -21,7 +20,7 @@ const Download = () => {
             >
               Download
             </Link>
-          </span>
+          </span> */}
         </p>
       </div>
       <Updates />

@@ -11,12 +11,13 @@ const Info = () => {
       <div className="container mx-auto md:p-16 flex flex-col md:flex-row items-center justify-between flex-grow">
         <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0 xs:mt-20 sm:mt-16 lg:mt-8 relative">
           <h1 className="text-5xl font-bold mb-4 text-center">
-            Project Update: v4 Live
+            Project Update: v4
           </h1>
           <p className="text-lg md:text-xl mb-4 text-center">
-            The v4 of the project is live! You can now access the project on
-            your mobile device. The project is still in development and new
-            features are being added.
+            Version 4 of our project is live, bringing mobile compatibility and
+            exciting new features. Sadly,{" "}
+            <span className="font-bold">development is paused due to a lack of funds</span>. Your
+            support is appreciated as we work to resume progress.
           </p>
           <p className="text-lg md:text-xl mb-8 text-center">
             Check out the{" "}

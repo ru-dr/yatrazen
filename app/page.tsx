@@ -4,9 +4,11 @@ import Info from "./components/Info";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col h-screen">
       <Download />
-      <Info />
+      <div className="flex-grow">
+        <Info />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Updates from "./Updates";
 
 const Download = () => {
@@ -9,18 +8,9 @@ const Download = () => {
         <div>
           <div className="avail-ping"></div>
         </div>
-        <p className="release font-medium">
+        <p className="release">
           Development halted due to{" "}
           <span className="font-bold">insufficient</span> funds.
-          {/* <span className="font-bold"> ( v4.0.6a ) </span>{" "}
-          <span>
-            <Link
-              href="https://github.com/NisargPatel14/yatrazen-HIS/releases/download/v1.1/app-release.apk"
-              className="text-blue-500 hover:text-blue-700 font-semibold px-2"
-            >
-              Download
-            </Link>
-          </span> */}
         </p>
       </div>
       <Updates />

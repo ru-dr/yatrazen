@@ -7,10 +7,8 @@ const MobileAppScreenshotURL =
 
 const Info = () => {
   return (
-    <div>
-      <div
-        className="container mx-auto md:p-16 flex flex-col md:flex-row items-center justify-between max-h-screen m-3.5"
-      >
+    <div className="flex flex-col h-full">
+      <div className="container mx-auto md:p-16 flex flex-col md:flex-row items-center justify-between flex-grow">
         <section className="md:w-1/2 md:mr-8 flex flex-col items-center justify-center mb-8 md:mb-0 xs:mt-20 sm:mt-16 lg:mt-8 relative">
           <h1 className="text-5xl font-bold mb-4 text-center">
             Project Update: v4 Live
@@ -42,7 +40,7 @@ const Info = () => {
           <img
             src={MobileAppScreenshotURL}
             alt="Mobile App Screenshot"
-            className="mb-8 h-auto w-96 sm:w-64 lg:w-80 xl:w-96"
+            className="mb-8 lg:mb-0 h-auto w-96 sm:w-64 lg:w-80 xl:w-96"
           />
         </section>
       </div>
